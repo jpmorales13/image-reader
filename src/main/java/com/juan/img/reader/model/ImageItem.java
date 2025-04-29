@@ -1,4 +1,4 @@
-package com.juan.img.reader.objects;
+package com.juan.img.reader.model;
 
 import jakarta.persistence.*;
 

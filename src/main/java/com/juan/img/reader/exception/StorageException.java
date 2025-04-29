@@ -1,4 +1,4 @@
-package com.juan.img.reader.service;
+package com.juan.img.reader.exception;
 
 public class StorageException extends RuntimeException {
 

@@ -1,4 +1,4 @@
-package com.juan.img.reader.service;
+package com.juan.img.reader.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

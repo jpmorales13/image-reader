@@ -1,4 +1,4 @@
-package com.juan.img.reader.objects;
+package com.juan.img.reader.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
