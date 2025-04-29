@@ -109,12 +109,13 @@ public class ImageReaderController {
         //Construct the image object
         Image image = new Image(file.getOriginalFilename(), 100, uploadDirectory + "/" + file.getOriginalFilename());
 
-        // Adding items into found on the picture
-        for (Object itemName : imageLabels.keySet()) {
-            if (itemName instanceof String) {
-                Item item = new Item(itemName.toString());
-                image.getItems().add(item);
-            }
+
+
+        // Adding items found on the picture
+        Set<String> itemNames = imageLabels.keySet();
+        for (String itemName : itemNames) {
+            Item item = new Item(itemName);
+            image.getItems().add(item);
         }
 
         // Save the object to the database
